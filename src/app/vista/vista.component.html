@@ -1,0 +1,45 @@
+
+    <div style="display: flex; align-items: center; justify-content: center;">
+        <div id="contenido_principal">
+            <div id='encabezado'>
+                DataBase CRUD's Autogenerator
+            </div>
+            <div class="parametro">
+                <div>Tipo de servidor</div>
+                <div><select #tipo name="" id="tipo_servidor">
+                    <option value="postgres">PostgreSQL</option>
+                    <option value="mssql">MSSQL</option>
+                </select></div>
+            </div>
+            <div class="parametro">
+                <div>Servidor</div>
+                <div><input #servidor type="text" name="" id="servidor" value="leoviquez.com"></div>
+            </div>
+            <div class="parametro">
+                <div>Puerto</div>
+                <div><input #puerto type="number" name="" id="puerto" value="5432"></div>
+            </div>
+            <div class="parametro">
+                <div>Base de datos</div>
+                <div><input #BD type="text" name="" id="base_datos" value="laboratorio"></div>
+            </div>
+            <div class="parametro">
+                <div>Usuario</div>
+                <div><input #usuario type="text" name="" id="usuario" value="BDII"></div>
+            </div>
+            <div class="parametro">
+                <div>Clave</div>
+                <div><input #clave type="password" name="" id="clave" value="*Bd12345"></div>
+            </div>
+            <div class="parametro">
+                <div>Esquema</div>
+                <div><input #esquema type="text" name="" id="esquema" value="dbo"></div>
+            </div>
+            <div class="resultado">
+                <button (click)="prueba()">Generar Crud's</button>
+                <textarea #imprimir name="" id="resultado" cols="40" rows="10">
+
+                </textarea>                
+            </div>
+        </div>        
+    </div>

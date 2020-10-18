@@ -1,0 +1,62 @@
+
+#contenido_principal
+{
+    font-family: 'minecraft';
+    color: honeydew;
+    font-weight: bolder;
+    border: 5px solid gray;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: lightgray;
+    max-width: 500px;
+}
+
+#contenido_principal > div
+{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color:gray;
+    border: 3px solid white
+}
+
+select, input, button
+{
+    max-width: 150px;
+    padding: 10px;
+    font-size: 1.2em;
+    color: rgb(43, 43, 43);
+    border-radius: 10px;
+}
+
+#contenido_principal #encabezado
+{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#contenido_principal .parametro
+{
+    display: flex; align-items: flex-end; justify-content: flex-end;
+}
+
+#contenido_principal .resultado
+{
+    display: flex; align-items: center; justify-content: center;
+}
+
+#contenido_principal .parametro div
+{
+    display: inline-block;
+}
+
+#contenido_principal .parametro div:nth-child(2)
+{
+    max-width: 150px;
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
