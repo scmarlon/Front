@@ -7,8 +7,8 @@
             <div class="parametro">
                 <div>Tipo de servidor</div>
                 <div><select #tipo name="" id="tipo_servidor">
-                    <option value="postgres">PostgreSQL</option>
                     <option value="mssql">MSSQL</option>
+                    <option value="postgres">PostgreSQL</option>
                 </select></div>
             </div>
             <div class="parametro">
@@ -21,7 +21,7 @@
             </div>
             <div class="parametro">
                 <div>Base de datos</div>
-                <div><input #BD type="text" name="" id="base_datos" value="laboratorio"></div>
+                <div><input #BD type="text" name="" id="base_datos" value="Teste_proyecto"></div>
             </div>
             <div class="parametro">
                 <div>Usuario</div>
@@ -36,10 +36,14 @@
                 <div><input #esquema type="text" name="" id="esquema" value="dbo"></div>
             </div>
             <div class="resultado">
-                <button (click)="prueba()">Generar Crud's</button>
+            
                 <textarea #imprimir name="" id="resultado" cols="40" rows="10">
 
                 </textarea>                
+            </div>
+            <div>
+                <button (click)="generarCruds()">Generar Crud's</button>
+                <button (click)="autoGenerarCruds()">Generar y Exc Crud's</button>
             </div>
         </div>        
     </div>
