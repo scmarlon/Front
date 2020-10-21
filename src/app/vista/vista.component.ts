@@ -41,7 +41,7 @@ export class VistaComponent implements OnInit, AfterViewInit {
       usuario: this.usuario.nativeElement.value,
       clave: this.clave.nativeElement.value};
     
-    console.log("soy Isaac");
+    
     this.dataService.getPrueba(variables).subscribe(data=>{
 
       console.log(data);
