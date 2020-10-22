@@ -36,5 +36,13 @@ export class DataService {
   autoGenerateRet(variabales: JSON){
     return this.response.post(this.url+'autogenerate/retrieve', variabales);
   }
+
+  autoGenerateUpd(variabales: JSON){
+    return this.response.post(this.url+'autogenerate/update', variabales);
+  }
+
+  generateUpd(variabales: JSON){
+    return this.response.post(this.url+'generate/update', variabales);
+  }
 }
 

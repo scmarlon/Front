@@ -44,6 +44,7 @@ export class VistaComponent implements OnInit, AfterViewInit {
     
 
     this.dataService.generateDel(variables).subscribe(data=>{
+      console.log(data);
       let resultado: any = data;
       let imprimir: any = resultado[0][""];
       
@@ -56,7 +57,14 @@ export class VistaComponent implements OnInit, AfterViewInit {
           resultado = data;
           imprimir = imprimir + '\n\n',
           imprimir = imprimir + resultado[0][""];
-          this.imprimir.nativeElement.value = imprimir;        
+          
+          
+          this.dataService.generateUpd(variables).subscribe(data=>{
+            resultado = data;
+            imprimir = imprimir + '\n\n',
+            imprimir = imprimir + resultado[0][""];
+            this.imprimir.nativeElement.value = imprimir;        
+          }) 
         })      
       })   
     })
@@ -89,7 +97,17 @@ export class VistaComponent implements OnInit, AfterViewInit {
           resultado = data;
           imprimir = imprimir + '\n\n',
           imprimir = imprimir + resultado[0][""];
-          this.imprimir.nativeElement.value = imprimir;        
+          
+
+
+          this.dataService.autoGenerateUpd(variables).subscribe(data=>{
+            resultado = data;
+            imprimir = imprimir + '\n\n',
+            imprimir = imprimir + resultado[0][""];
+            this.imprimir.nativeElement.value = imprimir;
+            
+            
+          })         
         })      
       })   
     })
